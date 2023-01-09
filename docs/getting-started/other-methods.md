@@ -28,6 +28,10 @@ And give the package access to use USB devices and observe hardware. The second 
 sudo snap connect zwave-js-ui:raw-usb
 sudo snap connect zwave-js-ui:hardware-observe
 ```
+You also need to provide the host IP to snap.
+```bash
+sudo snap set zwave-js-ui server.host=xxx.xxx.xxx.xxx
+```
 
 > [!NOTE]
 > See `zwave-js-ui.help` for usage and environment settings.
